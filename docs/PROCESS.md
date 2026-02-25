@@ -1,4 +1,4 @@
-# PROCESS Reflection — Week 5 (Claude Web + Micro-Iteration)
+# PROCESS Reflection — Week 5
 
 ## What I built
 I added a dark mode toggle to my Moonlight Matcha Cafe multi-page static site. The feature adds a theme button in the navigation, switches the site color palette using CSS variables, updates the icon and aria-pressed state, and saves the user’s preference in localStorage so it persists across refreshes and page navigation.
