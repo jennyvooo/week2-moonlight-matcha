@@ -5,6 +5,7 @@ if (themeToggle) {
   themeToggle.addEventListener('click', () => {
     const isDark = document.body.classList.toggle('dark-mode');
     themeToggle.textContent = isDark ? '☀️' : '🌙';
+    themeToggle.setAttribute('aria-pressed', isDark);
   });
 }
 
