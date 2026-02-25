@@ -863,6 +863,19 @@ body.dark-mode .form-group textarea {
   color: var(--charcoal);
 }
 
+body.dark-mode footer {
+  background-color: #0d1210;
+}
+
+body.dark-mode .cta-section {
+  background: linear-gradient(135deg, #1e4d2f 0%, #0d1210 100%);
+}
+
+body.dark-mode .cta-section h2,
+body.dark-mode .cta-section p {
+  color: var(--dark-green);
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   h1 {
