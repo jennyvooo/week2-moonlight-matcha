@@ -1,11 +1,20 @@
 // Dark Mode Toggle
 const themeToggle = document.querySelector('#theme-toggle');
 
+function applyTheme(dark) {
+  document.body.classList.toggle('dark-mode', dark);
+  themeToggle.textContent = dark ? '☀️' : '🌙';
+  themeToggle.setAttribute('aria-pressed', dark);
+}
+
 if (themeToggle) {
+  applyTheme(localStorage.getItem('theme') === 'dark');
+
   themeToggle.addEventListener('click', () => {
     const isDark = document.body.classList.toggle('dark-mode');
     themeToggle.textContent = isDark ? '☀️' : '🌙';
     themeToggle.setAttribute('aria-pressed', isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
 }
 
