@@ -840,6 +840,29 @@ footer {
   transform: translateY(0);
 }
 
+/* Dark Mode */
+body.dark-mode {
+  --primary-green: #6aaf82;
+  --dark-green: #a8d5ba;
+  --light-green: #3d6b4d;
+  --cream: #1e2820;
+  --warm-white: #141917;
+  --charcoal: #e8e4db;
+  --soft-gray: #9e9e96;
+  --accent-gold: #c49060;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --shadow: rgba(0, 0, 0, 0.4);
+  color-scheme: dark;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background-color: var(--cream);
+  color: var(--charcoal);
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   h1 {
