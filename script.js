@@ -1,3 +1,13 @@
+// Dark Mode Toggle
+const themeToggle = document.querySelector('#theme-toggle');
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark-mode');
+    themeToggle.textContent = isDark ? '☀️' : '🌙';
+  });
+}
+
 // Mobile Navigation Toggle
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
