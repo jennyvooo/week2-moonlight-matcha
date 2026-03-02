@@ -1,3 +1,12 @@
+// Email Validation
+function validateEmail(email) {
+  const trimmed = email.trim();
+  const parts = trimmed.split('@');
+  if (parts.length !== 2) return false;
+  const domain = parts[1];
+  return domain.includes('.');
+}
+
 // Dark Mode Toggle
 const themeToggle = document.querySelector('#theme-toggle');
 
