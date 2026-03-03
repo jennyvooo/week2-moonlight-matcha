@@ -4,7 +4,8 @@ function validateEmail(email) {
   const parts = trimmed.split('@');
   if (parts.length !== 2) return false;
   const domain = parts[1];
-  return domain.includes('.');
+  const dotIndex = domain.indexOf('.');
+  return dotIndex > 0 && dotIndex < domain.length - 1;
 }
 
 // Dark Mode Toggle
